@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import Script from 'next/script'
 
+import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
 const Navbar = (props) => {
@@ -63,8 +63,9 @@ const Navbar = (props) => {
             <span className="navbar-text1">Get started</span>
           </div>
         </div>
-        <div className="navbar-container1">
-          <Script>{`
+        <div className="navbar-div">
+          <React.Fragment>
+            <Script>{`
     /*
 Mobile menu - Code Embed
 */
@@ -108,6 +109,7 @@ const runMobileMenuCodeEmbed = () => {
 runMobileMenuCodeEmbed()
 listenForUrlChangesMobileMenu()
 `}</Script>
+          </React.Fragment>
         </div>
       </nav>
       <style jsx>
@@ -241,7 +243,7 @@ listenForUrlChangesMobileMenu()
             font-stretch: normal;
             text-decoration: none;
           }
-          .navbar-container1 {
+          .navbar-div {
             display: contents;
           }
 

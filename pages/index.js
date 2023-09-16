@@ -1,6 +1,7 @@
 import React from 'react'
-import Script from 'next/script'
 import Head from 'next/head'
+
+import Script from 'dangerous-html/react'
 
 import Navbar from '../components/navbar'
 
@@ -64,13 +65,15 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-container1">
-              <div className="home-container2">
-                <iframe
-                  src="https://my.spline.design/biblicallyaccurateo-286f4450dd691581d4e72f88f7fe3ea3/"
-                  frameBorder="0"
-                  width="100%"
-                  height="100%"
-                />
+              <div className="home-div">
+                <React.Fragment>
+                  <iframe
+                    src="https://my.spline.design/biblicallyaccurateo-286f4450dd691581d4e72f88f7fe3ea3/"
+                    frameBorder="0"
+                    width="100%"
+                    height="100%"
+                  />
+                </React.Fragment>
               </div>
             </div>
           </div>
@@ -231,14 +234,16 @@ const Home = (props) => {
           </header>
           <section className="home-note">
             <div className="home-image11">
-              <div className="home-container3">
-                <div className="home-container4">
-                  <iframe
-                    src="https://my.spline.design/chips-1428cba460ce2228ffae1c3f47aee1ca/"
-                    frameBorder="0"
-                    width="100%"
-                    height="100%"
-                  />
+              <div className="home-container2">
+                <div className="home-div1">
+                  <React.Fragment>
+                    <iframe
+                      src="https://my.spline.design/chips-1428cba460ce2228ffae1c3f47aee1ca/"
+                      frameBorder="0"
+                      width="100%"
+                      height="100%"
+                    />
+                  </React.Fragment>
                 </div>
               </div>
             </div>
@@ -275,14 +280,16 @@ const Home = (props) => {
           </section>
           <section id="join" className="home-note1">
             <div className="home-image12">
-              <div className="home-container5">
-                <div className="home-container6">
-                  <iframe
-                    src="https://my.spline.design/cyberflower-2885f140b71038be1e13de9b17cb9697/"
-                    frameBorder="0"
-                    width="100%"
-                    height="100%"
-                  />
+              <div className="home-container3">
+                <div className="home-div2">
+                  <React.Fragment>
+                    <iframe
+                      src="https://my.spline.design/cyberflower-2885f140b71038be1e13de9b17cb9697/"
+                      frameBorder="0"
+                      width="100%"
+                      height="100%"
+                    />
+                  </React.Fragment>
                 </div>
               </div>
             </div>
@@ -460,13 +467,14 @@ const Home = (props) => {
             </main>
             <section className="home-copyright1">
               <span className="home-text18">
-                © 2022 latitude. All Rights Reserved.
+                © 2023 AILAYZER. All Rights Reserved.
               </span>
             </section>
           </div>
         </footer>
         <div className="home-accordion-code">
-          <Script>{`
+          <React.Fragment>
+            <Script>{`
     /*
 Accordion - Code Embed
 */
@@ -536,6 +544,7 @@ Here's what the above is doing:
                 - Rotates accordion icon 180deg
 */
 `}</Script>
+          </React.Fragment>
         </div>
       </div>
       <style jsx>
@@ -658,7 +667,7 @@ Here's what the above is doing:
             display: flex;
             align-items: flex-start;
           }
-          .home-container2 {
+          .home-div {
             display: contents;
           }
           .home-features {
@@ -1074,14 +1083,14 @@ Here's what the above is doing:
             flex-direction: row;
             justify-content: center;
           }
-          .home-container3 {
+          .home-container2 {
             width: 100%;
             height: 650px;
             display: flex;
             align-items: center;
             justify-content: center;
           }
-          .home-container4 {
+          .home-div1 {
             display: contents;
           }
           .home-content09 {
@@ -1147,12 +1156,12 @@ Here's what the above is doing:
             flex-direction: row;
             justify-content: center;
           }
-          .home-container5 {
+          .home-container3 {
             width: 100%;
             height: 680px;
             display: flex;
           }
-          .home-container6 {
+          .home-div2 {
             display: contents;
           }
           .home-content10 {
@@ -1895,7 +1904,7 @@ Here's what the above is doing:
             .home-container1 {
               height: 100%;
             }
-            .home-container2 {
+            .home-div {
               flex: 1;
               width: 100%;
               height: 100%;
@@ -1933,7 +1942,7 @@ Here's what the above is doing:
               padding-top: 0px;
               padding-bottom: 0px;
             }
-            .home-container5 {
+            .home-container3 {
               justify-content: center;
             }
             .home-textinput {
@@ -1957,6 +1966,12 @@ Here's what the above is doing:
               font-family: Inter;
               font-weight: 700;
               line-height: 24px;
+            }
+            .home-text18 {
+              color: rgb(196, 196, 196);
+              font-size: 14px;
+              font-family: Poppins;
+              line-height: 21px;
             }
           }
         `}
