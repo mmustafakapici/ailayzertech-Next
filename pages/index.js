@@ -64,16 +64,18 @@ const Home = (props) => {
                 </label>
               </div>
             </div>
-            <div className="home-container1">
-              <div className="home-div">
-                <React.Fragment>
-                  <iframe
-                    src="https://my.spline.design/biblicallyaccurateo-286f4450dd691581d4e72f88f7fe3ea3/"
-                    frameBorder="0"
-                    width="100%"
-                    height="100%"
-                  />
-                </React.Fragment>
+            <div className="home-container01">
+              <div className="home-container02">
+                <div className="home-container03">
+                  <React.Fragment>
+                    <iframe
+                      src="https://my.spline.design/biblicallyaccurateo-286f4450dd691581d4e72f88f7fe3ea3/"
+                      frameBorder="0"
+                      width="100%"
+                      height="100%"
+                    />
+                  </React.Fragment>
+                </div>
               </div>
             </div>
           </div>
@@ -234,16 +236,18 @@ const Home = (props) => {
           </header>
           <section className="home-note">
             <div className="home-image11">
-              <div className="home-container2">
-                <div className="home-div1">
-                  <React.Fragment>
-                    <iframe
-                      src="https://my.spline.design/chips-1428cba460ce2228ffae1c3f47aee1ca/"
-                      frameBorder="0"
-                      width="100%"
-                      height="100%"
-                    />
-                  </React.Fragment>
+              <div className="home-container04">
+                <div className="home-container05">
+                  <div className="home-container06">
+                    <React.Fragment>
+                      <iframe
+                        src="https://my.spline.design/chips-1428cba460ce2228ffae1c3f47aee1ca/"
+                        frameBorder="0"
+                        width="100%"
+                        height="100%"
+                      />
+                    </React.Fragment>
+                  </div>
                 </div>
               </div>
             </div>
@@ -280,16 +284,18 @@ const Home = (props) => {
           </section>
           <section id="join" className="home-note1">
             <div className="home-image12">
-              <div className="home-container3">
-                <div className="home-div2">
-                  <React.Fragment>
-                    <iframe
-                      src="https://my.spline.design/cyberflower-2885f140b71038be1e13de9b17cb9697/"
-                      frameBorder="0"
-                      width="100%"
-                      height="100%"
-                    />
-                  </React.Fragment>
+              <div className="home-container07">
+                <div className="home-container08">
+                  <div className="home-container09">
+                    <React.Fragment>
+                      <iframe
+                        src="https://my.spline.design/cyberflower-2885f140b71038be1e13de9b17cb9697/"
+                        frameBorder="0"
+                        width="100%"
+                        height="100%"
+                      />
+                    </React.Fragment>
+                  </div>
                 </div>
               </div>
             </div>
@@ -472,9 +478,10 @@ const Home = (props) => {
             </section>
           </div>
         </footer>
-        <div className="home-accordion-code">
-          <React.Fragment>
-            <Script>{`
+        <div>
+          <div className="home-container11">
+            <React.Fragment>
+              <Script>{`
     /*
 Accordion - Code Embed
 */
@@ -544,7 +551,8 @@ Here's what the above is doing:
                 - Rotates accordion icon 180deg
 */
 `}</Script>
-          </React.Fragment>
+            </React.Fragment>
+          </div>
         </div>
       </div>
       <style jsx>
@@ -661,13 +669,17 @@ Here's what the above is doing:
           .home-caption1 {
             color: var(--dl-color-anahat-white);
           }
-          .home-container1 {
+          .home-container01 {
             width: 100%;
             height: 100%;
             display: flex;
             align-items: flex-start;
           }
-          .home-div {
+          .home-container02 {
+            width: 100%;
+            height: 100%;
+          }
+          .home-container03 {
             display: contents;
           }
           .home-features {
@@ -1083,14 +1095,18 @@ Here's what the above is doing:
             flex-direction: row;
             justify-content: center;
           }
-          .home-container2 {
+          .home-container04 {
             width: 100%;
             height: 650px;
             display: flex;
             align-items: center;
             justify-content: center;
           }
-          .home-div1 {
+          .home-container05 {
+            width: 100%;
+            height: 100%;
+          }
+          .home-container06 {
             display: contents;
           }
           .home-content09 {
@@ -1156,12 +1172,17 @@ Here's what the above is doing:
             flex-direction: row;
             justify-content: center;
           }
-          .home-container3 {
+          .home-container07 {
             width: 100%;
             height: 680px;
             display: flex;
           }
-          .home-div2 {
+          .home-container08 {
+            width: 100%;
+            height: 100%;
+            align-self: center;
+          }
+          .home-container09 {
             display: contents;
           }
           .home-content10 {
@@ -1603,7 +1624,7 @@ Here's what the above is doing:
             font-family: Poppins;
             line-height: 21px;
           }
-          .home-accordion-code {
+          .home-container11 {
             display: contents;
           }
           @media (max-width: 991px) {
@@ -1901,10 +1922,10 @@ Here's what the above is doing:
             .home-get-started1 {
               display: flex;
             }
-            .home-container1 {
+            .home-container01 {
               height: 100%;
             }
-            .home-div {
+            .home-container02 {
               flex: 1;
               width: 100%;
               height: 100%;
@@ -1942,7 +1963,7 @@ Here's what the above is doing:
               padding-top: 0px;
               padding-bottom: 0px;
             }
-            .home-container3 {
+            .home-container07 {
               justify-content: center;
             }
             .home-textinput {

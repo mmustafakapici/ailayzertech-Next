@@ -63,9 +63,10 @@ const Navbar = (props) => {
             <span className="navbar-text1">Get started</span>
           </div>
         </div>
-        <div className="navbar-div">
-          <React.Fragment>
-            <Script>{`
+        <div>
+          <div className="navbar-container2">
+            <React.Fragment>
+              <Script>{`
     /*
 Mobile menu - Code Embed
 */
@@ -109,7 +110,8 @@ const runMobileMenuCodeEmbed = () => {
 runMobileMenuCodeEmbed()
 listenForUrlChangesMobileMenu()
 `}</Script>
-          </React.Fragment>
+            </React.Fragment>
+          </div>
         </div>
       </nav>
       <style jsx>
@@ -243,7 +245,7 @@ listenForUrlChangesMobileMenu()
             font-stretch: normal;
             text-decoration: none;
           }
-          .navbar-div {
+          .navbar-container2 {
             display: contents;
           }
 
